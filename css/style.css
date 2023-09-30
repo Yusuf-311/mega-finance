@@ -45,7 +45,7 @@ footer h5 {
 }
 
 .card-text {
-  color: #adb6bd;
+  color: #adb6bd !important;
 }
 
 .flow {
