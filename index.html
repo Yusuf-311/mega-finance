@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- Vendor Style -->
     <link
       rel="stylesheet"
       media="screen"
@@ -20,21 +21,48 @@
       media="screen"
       href="vendor/fontawesome/css/all.css"
     />
-
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="vendor/bootstrap/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" media="screen" href="css/theme.min.css" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" media="screen" href="css/style.css" />
+
+    <!-- Bootsrap icon CDN link  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Inter:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="overflow-y-hidden">
+  <body class="bg-secondary overflow-y-hidden">
     <main>
       <header
         class="navbar sticky-top navbar-expand-lg navbar-light bg-light navbar-shadow d-lg-block"
       >
         <div class="container justify-content-lg-between px-0 px-xl-3">
-          <a class="navbar-brand order-lg-1 m-0 pe-lg-2 me-lg-4" href="#">
+          <button
+            class="navbar-toggler order-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand order-1 m-0 pe-lg-2 me-lg-4" href="#">
             <img
               class="d-none d-lg-block"
               width="75"
@@ -48,17 +76,115 @@
               alt="logo Mega Finance"
             />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+
+          <nav class="navbar fs-sm order-2 text-nav px-0 w-100">
+            <div class="p-0 justify-content-between container-fluid">
+              <div
+                class="collapse navbar-collapse px-0 d-lg-flex justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav px-0 mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Tentang Kami
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-item" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Jaringan Kantor</a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Berita dan Acara
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Karir
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Kontak
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
           <div class="d-lg-flex order-lg-3 d-none">
             <form action="#" accept-charset="UTF-8" method="get">
               <div class="container d-flex flex-nowrap align-items-center">
@@ -79,234 +205,24 @@
             </form>
           </div>
         </div>
-
-        <nav class="navbar fs-sm text-nav px-0 w-100">
-          <div class="p-0 justify-content-center container-fluid">
-            <div
-              class="collapse navbar-collapse px-0 d-lg-flex justify-content-center"
-              id="navbarSupportedContent"
-            >
-              <ul class="navbar-nav px-0 mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Tentang Kami
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-item" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Unit Bisnis
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-item" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Jaringan Kantor</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Konsumen
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Berita dan Acara
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Karir
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Kontak
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Belanja Online
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Whistle Blowing System
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Restrukturisasi</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
       </header>
       <section class="py-5 container mb-5 d-flex align-items-center">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2">
-          <div class="col text-center text-lg-start">
-            <h1 class="display-2 pe-lg-5 fw-medium mb-3">
+          <div class="col text-center align-self-center text-lg-start">
+            <h1 class="display-3 pe-lg-5 fw-medium mb-3">
               Lorem ipsum dolor sit amet consectetur
             </h1>
             <p class="me-lg-5 my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              nam corporis iusto magni tempore alias placeat
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              molestias obcaecati consequuntur tempore enim, ipsa, voluptatem
+              cum aperiam magnam dolore in aspernatur quo repellat quas ratione.
+              Commodi temporibus ullam repellendus.
             </p>
-            <a href="" class="text-mega fw-medium">
-              Explore Feature &nbsp; <i class="bi bi-arrow-right"></i
-            ></a>
-            <!-- Toolbar example -->
-            <div
-              class="btn-toolbar my-5"
-              role="toolbar"
-              aria-label="Settings toolbar"
-            >
-              <div
-                class="btn-group me-2 mb-2"
-                role="group"
-                aria-label="Settings group"
-              >
-                <a href="#" class="btn-market btn-apple" role="button">
-                  <span class="btn-market-subtitle">Download on the</span>
-                  <span class="btn-market-title">App Store</span>
-                </a>
-              </div>
+            <button type="button" class="btn btn-warning btn-lg mb-5">
+              Ajukan Kredit <i class="bi bi-arrow-right-circle"></i>
+            </button>
 
-              <div
-                class="btn-group mb-2"
-                role="group"
-                aria-label="Delete settings"
-              >
-                <a href="#" class="btn-market btn-google" role="button">
-                  <span class="btn-market-subtitle">Download on the</span>
-                  <span class="btn-market-title">Google Play</span>
-                </a>
-              </div>
-            </div>
+            <p class="text-mega">we search, you choosen !</p>
           </div>
           <div class="col h-100 bg-mega p-4 rounded-3">
             <!-- Default Bootstrap carousel -->
@@ -421,113 +337,307 @@
           </div>
         </div>
       </section>
-      <section class="border bg-mega-grey mb-5">
-        <div class="row row-cols-lg-2 row-cols-1 px-5 py-5 align-items-center">
-          <div
-            class="col-lg-6 mb-3 mb-lg-0 text-center text-lg-start display-6"
-          >
-            Cara Pembayaran
-          </div>
-          <div class="col-lg-6 d-flex">
-            <div
-              id="carouselExampleSlidesOnly"
-              class="carousel slide"
-              data-bs-ride="carousel"
+
+      <!-- Service Awal -->
+      <section class="container py-5">
+        <h2 class="h1 text-center">Our services</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">
+          We provide a wide range of consulting services
+        </p>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 h-100 p-4 text-decoration-none rounded-5"
+              href="#"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col">
-                      <img
-                        src="images/Alfa-Express.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Alfamart.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Alfamidi.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/ATM-Bersama.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
+              <div class="card-body pb-0">
+                <img
+                  width="64"
+                  height="64"
+                  src="https://img.icons8.com/external-itim2101-lineal-itim2101/64/F47B1F/external-loan-finance-itim2101-lineal-itim2101.png"
+                  alt="external-loan-finance-itim2101-lineal-itim2101"
+                />
+                <h3 class="h4 card-title mt-0">Advertising communications</h3>
+                <p class="card-text">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint velit officia consequat duis enim velit mollit.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 h-100 text-decoration-none p-4 rounded-5"
+              href="#"
+            >
+              <div class="card-body pb-0">
+                <img
+                  width="64"
+                  height="64"
+                  src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/F47B1F/external-loan-real-estate-flatart-icons-outline-flatarticons.png"
+                  alt="external-loan-real-estate-flatart-icons-outline-flatarticons"
+                />
+                <h3 class="h4 card-title mt-0">Marketing and branding</h3>
+                <p class="card-text">
+                  Find aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur neque congue.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 p-3 h-100 text-decoration-none rounded-5"
+              href="#"
+            >
+              <div class="card-body pb-0">
+                <img
+                  width="64"
+                  height="64"
+                  src="https://img.icons8.com/external-yogi-aprelliyanto-detailed-outline-yogi-aprelliyanto/64/F47B1F/external-home-loan-real-asset-yogi-aprelliyanto-detailed-outline-yogi-aprelliyanto.png"
+                  alt="external-home-loan-real-asset-yogi-aprelliyanto-detailed-outline-yogi-aprelliyanto"
+                />
+                <h3 class="h4 card-title mt-0">Web and Internet marketing</h3>
+                <p class="card-text">
+                  Hac erat leo proin odio est sed sit felis facilisi integer sed
+                  congue neque turpis dictumst sit sed volutpat aliquet tortor
+                  non.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 p-3 h-100 text-decoration-none rounded-5"
+              href="#"
+            >
+              <div class="card-body pb-0">
+                <img
+                  width="68"
+                  height="68"
+                  src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/64/F47B1F/external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks.png"
+                  alt="external-car-loan-finance-trading-and-banking-smashingstocks-mixed-smashing-stocks"
+                />
+                <h3 class="h4 card-title mt-0">Email marketing</h3>
+                <p class="card-text">
+                  Adipiscing posuere dui, amet, augue nisl dictum justo, enim.
+                  Sed neque congue non quam ultrices interdum vitae vestibulum.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 h-100 p-3 text-decoration-none rounded-5"
+              href="#"
+            >
+              <div class="card-body pb-0">
+                <img
+                  width="64"
+                  height="64"
+                  src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/64/F47B1F/external-loan-finance-2-kmg-design-glyph-kmg-design.png"
+                  alt="external-loan-finance-2-kmg-design-glyph-kmg-design"
+                />
+                <h3 class="h4 card-title mt-0">Working on communication</h3>
+                <p class="card-text">
+                  Molestie enim tempus egestas a at enim. Velit hendrerit nibh
+                  eget porta pretium. Ipsum orci habitasse eget malesuada
+                  platea.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <a
+              class="card border-0 h-100 p-3 text-decoration-none rounded-5"
+              href="#"
+            >
+              <div class="card-body pb-0">
+                <img
+                  width="64"
+                  height="64"
+                  src="https://img.icons8.com/carbon-copy/64/F47B1F/school.png"
+                  alt="school"
+                />
+                <h3 class="h4 card-title mt-0">Business copywriting</h3>
+                <p class="card-text">
+                  Massa donec quam orci feugiat. Quis iaculis facilisi ornare
+                  aenean lorem enim purus in lacus in ullamcorper diam
+                  consequat.
+                </p>
+              </div>
+              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+                <div
+                  class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none"
+                >
+                  <i class="bi bi-arrow-right"></i>
+                </div></div
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- Service Akhir -->
+
+      <!-- Why Choose US -->
+
+      <section class="overflow-hidden container">
+        <h2 class="h1 text-center">Why Choose Us</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">
+          We provide a wide range of consulting services
+        </p>
+        <div class="container pb-5 pt-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+          <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
+            <!-- CEO quote-->
+            <div
+              class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0"
+            >
+              <img
+                class="d-block rounded-3"
+                src="https://images.unsplash.com/photo-1587614203976-365c74645e83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                alt="Nicolas Black"
+                height="20px"
+              />
+            </div>
+            <!-- Steps-->
+            <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+              <div class="ps-md-4 ps-lg-0">
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1 aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                >
+                  <div
+                    class="btn btn-lg btn-icon bg-mega fs-xl text-light fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none"
+                  >
+                    01
+                  </div>
+                  <div
+                    class="card border-0 ps-3"
+                    style="width: calc(100% - 1.75rem)"
+                  >
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Formulation of the problem
+                      </h3>
+                      <p class="card-text">
+                        Find aute irure dolor in reprehenderi voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur am luctus.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <img
-                        src="images/Bank-Mega-Syariah.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/BRI.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Dandan.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Indomaret.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1 aos-init aos-animate"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="250"
+                >
+                  <div
+                    class="btn btn-lg btn-icon bg-mega fs-xl text-light fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none"
+                  >
+                    02
+                  </div>
+                  <div
+                    class="card border-0 ps-3"
+                    style="width: calc(100% - 1.75rem)"
+                  >
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Assessment of the current state
+                      </h3>
+                      <p class="card-text">
+                        Risus quam quis at euismod vitae dui elementu eu in diam
+                        malesuada mattis ut urna integer erat nisi nibh.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col">
-                      <img
-                        src="images/Kantor-Pos.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1 aos-init"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="500"
+                >
+                  <div
+                    class="btn btn-lg btn-icon bg-mega fs-xl text-light fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none"
+                  >
+                    03
+                  </div>
+                  <div
+                    class="card border-0 ps-3"
+                    style="width: calc(100% - 1.75rem)"
+                  >
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Business plan creation
+                      </h3>
+                      <p class="card-text">
+                        A sagittis morbi massa venenatis, egestas viverra ac
+                        elit nibh tellus nisi in nec tellus mauris feugiat
+                        gravida.
+                      </p>
                     </div>
-                    <div class="col">
-                      <img
-                        src="images/prima.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Tokopedia.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col">
-                      <img
-                        src="images/Transmart.png"
-                        class="d-block w-75"
-                        alt="..."
-                      />
+                  </div>
+                </div>
+                <div
+                  class="position-relative d-flex justify-content-end my-3 py-1 aos-init"
+                  data-aos="fade-left"
+                  data-aos-easing="ease-out-back"
+                  data-aos-delay="700"
+                >
+                  <div
+                    class="btn btn-lg btn-icon bg-mega fs-xl text-light fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y zindex-2 pe-none"
+                  >
+                    04
+                  </div>
+                  <div
+                    class="card border-0 ps-3"
+                    style="width: calc(100% - 1.75rem)"
+                  >
+                    <div class="card-body ps-4">
+                      <h3 class="h5 card-title pb-2 mb-1">
+                        Strategy implementation
+                      </h3>
+                      <p class="card-text">
+                        Elementum purus, nisl ipsum sit. Amet sit praesent proin
+                        sit cras. Leo sed praesent nunc vel nec risus.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -536,15 +646,19 @@
           </div>
         </div>
       </section>
+
       <!-- News feed Awal -->
       <section class="container py-5">
-        <h1 class="text-center text-lg-start">Feed News</h1>
+        <h2 class="h1 text-center">Don't Miss Our Last News</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">
+          We provide a wide range of consulting services
+        </p>
         <div class="tns-carousel-wrapper mt-4">
           <div
             class="tns-carousel-inner"
-            data-carousel-options='{"items": 3, "controls": false, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":2, "gutter": 16},"768":{"items":3, "gutter": 16}, "1100":{"gutter": 24}}}'
+            data-carousel-options='{"items": 3, "controls": false, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":3, "gutter": 16},"768":{"items":4, "gutter": 16}, "1100":{"gutter": 24}}}'
           >
-            <div class="position-relative">
+            <div class="position-relative py-5">
               <img
                 class="rounded-1"
                 src="images/news (1).png"
@@ -553,17 +667,13 @@
               <div class="pt-3 mt-3">
                 <h3 class="h4 mb-3">
                   <a class="stretched-link text-mega-grey" href="#"
-                    >Lorem ipsum dolor sit.</a
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</a
                   >
                 </h3>
-                <p class="mb-0">
-                  Morbi et massa fames ac scelerisque sit commodo dignissim
-                  faucibus vel quisque proin lectus laoreet sem adipiscing
-                  sollicitudin erat massa tellus lorem
-                </p>
               </div>
             </div>
-            <div class="position-relative">
+            <div class="position-relative py-5">
               <img
                 class="rounded-1"
                 src="images/news (2).png"
@@ -572,17 +682,13 @@
               <div class="pt-3 mt-3">
                 <h3 class="h4 mb-3">
                   <a class="stretched-link text-mega-grey" href="#"
-                    >Lorem ipsum dolor sit.</a
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</a
                   >
                 </h3>
-                <p class="mb-0">
-                  Morbi et massa fames ac scelerisque sit commodo dignissim
-                  faucibus vel quisque proin lectus laoreet sem adipiscing
-                  sollicitudin erat massa tellus lorem
-                </p>
               </div>
             </div>
-            <div class="position-relative">
+            <div class="position-relative py-5">
               <img
                 class="rounded-1"
                 src="images/news (3).png"
@@ -591,17 +697,13 @@
               <div class="pt-3 mt-3">
                 <h3 class="h4 mb-3">
                   <a class="stretched-link text-mega-grey" href="#"
-                    >Lorem ipsum dolor sit.</a
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</a
                   >
                 </h3>
-                <p class="mb-0">
-                  Morbi et massa fames ac scelerisque sit commodo dignissim
-                  faucibus vel quisque proin lectus laoreet sem adipiscing
-                  sollicitudin erat massa tellus lorem
-                </p>
               </div>
             </div>
-            <div class="position-relative">
+            <div class="position-relative py-5">
               <img
                 class="rounded-1"
                 src="images/news (4).jpg"
@@ -609,18 +711,14 @@
               />
               <div class="pt-3 mt-3">
                 <h3 class="h4 mb-3">
-                  <a class="stretched-link text-mega" href="#"
-                    >Lorem ipsum dolor sit.</a
+                  <a class="stretched-link text-mega-grey" href="#"
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</a
                   >
                 </h3>
-                <p class="mb-0">
-                  Morbi et massa fames ac scelerisque sit commodo dignissim
-                  faucibus vel quisque proin lectus laoreet sem adipiscing
-                  sollicitudin erat massa tellus lorem
-                </p>
               </div>
             </div>
-            <div class="position-relative">
+            <div class="position-relative py-5">
               <img
                 class="rounded-1"
                 src="images/news (5).jpg"
@@ -629,14 +727,10 @@
               <div class="pt-3 mt-3">
                 <h3 class="h4 mb-3">
                   <a class="stretched-link text-mega-grey" href="#"
-                    >Lorem ipsum dolor sit.</a
+                    >Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</a
                   >
                 </h3>
-                <p class="mb-0">
-                  Morbi et massa fames ac scelerisque sit commodo dignissim
-                  faucibus vel quisque proin lectus laoreet sem adipiscing
-                  sollicitudin erat massa tellus lorem
-                </p>
               </div>
             </div>
           </div>
@@ -646,14 +740,14 @@
       <!-- Testimoni Awal -->
 
       <section class="container py-5 mb-5">
-        <div class="text-lg-start text-center">
-          <h1>Testimoni Konsumen</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+        <h2 class="h1 text-center">Testimoni Konsumen</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">
+          We provide a wide range of consulting services
+        </p>
         <div class="tns-carousel-wrapper">
           <div
             class="tns-carousel-inner"
-            data-carousel-options='{"items": 3, "controls": false, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":2, "gutter": 16},"768":{"items":3, "gutter": 16}, "1100":{"gutter": 24}}}'
+            data-carousel-options='{"items": 3, "controls": false, "responsive": {"0":{"items":1, "gutter": 16},"500":{"items":3, "gutter": 16},"768":{"items":4, "gutter": 16}, "1100":{"gutter": 24}}}'
           >
             <div class="card me-sm-4">
               <div class="card-body">
@@ -1089,18 +1183,18 @@
       </footer>
       <!-- Footer Akhir -->
     </main>
-  </body>
-  <script
-    data-cfasync="false"
-    src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-  ></script>
-  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
-  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
-  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
-  <script src="vendor/parallax-js/dist/parallax.min.js"></script>
+    <script
+      data-cfasync="false"
+      src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
 
-  <script src="js/theme.min.js"></script>
+    <script src="js/theme.min.js"></script>
+  </body>
 </html>

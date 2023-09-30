@@ -1,3 +1,8 @@
+/* Font Style */
+* {
+  font-family: "Clicker Script", cursive;
+  font-family: "Inter", sans-serif;
+}
 .overflow-y-hidden {
   overflow-x: hidden;
 }
@@ -31,4 +36,18 @@ footer a:hover {
 footer a,
 footer h5 {
   color: white;
+}
+
+/* Card */
+
+.rounded-5 {
+  border-radius: 10%;
+}
+
+.card-text {
+  color: #adb6bd;
+}
+
+.flow {
+  bottom: 3%;
 }
