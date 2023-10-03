@@ -53,3 +53,8 @@ footer h5 {
 .card-text {
   color: #231f206b !important;
 }
+
+.btn-outline-adira {
+  border-color: #fcd733 !important;
+  color: #fcd733 !important;
+}
