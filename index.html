@@ -317,7 +317,6 @@
             </div>
 
             <div class="row row-cols-sm-1 row-cols-md-2 mt-4">
-              <!-- No image -->
               <div class="col-lg-6 mb-4 mb-lg-0 mb-md-0">
                 <div
                   id="carouselExampleSlidesOnly"
@@ -360,6 +359,14 @@
           </div>
         </div>
       </section>
+
+      <menu class="zindex-5">
+        <a href="#" class="action"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="action"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="action"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="action"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="trigger p-2"><img src="images/logo.png" alt="" /></a>
+      </menu>
 
       <!-- Service Awal -->
       <section class="container py-5">
@@ -523,7 +530,7 @@
                 <h3 class="h4 card-title mt-0">Financial Wellness Workshops</h3>
                 <p class="card-text">
                   Massa donec quam orci feugiat. Quis iaculis facilisi ornare
-                  aenean lorem enim purus in lacus in ullamcorper diam
+                  aenean lorem enim purus in lacus in ullamcorper diama
                   consequat.
                 </p>
               </div>
@@ -1055,31 +1062,6 @@
           </div>
         </div>
       </section>
-      <!-- Kontak -->
-      <section class="container bg-light rounded overflow-hidden py-md-5">
-        <div class="text-center">
-          <h2 class="h1 text-center">Hubungi Kami</h2>
-          <p class="text-center pb-4 mb-2 mb-lg-3">
-            We provide a wide range of consulting services
-          </p>
-          <a target="_blank" href="https://wa.me/6285795572813">
-            <img
-              src="images/button-wa.png"
-              class="rounded mx-auto"
-              alt="mega finance whatsapp"
-              style="width: 300px"
-            /> </a
-          ><br />
-          <a target="_blank" href="https://bit.ly/m/Support-Center">
-            <img
-              src="https://netfin-assets.imgix.net/qr%20Netfin.png"
-              alt="QR-General-NETFIN-ccexpress"
-              border="0"
-              style="width: 300px"
-            />
-          </a>
-        </div>
-      </section>
 
       <!-- Footer-->
       <footer class="footer pt-5 bg-footer pt-md-6">
@@ -1114,6 +1096,14 @@
                 href="#"
                 ><i class="bi bi-envelope-at-fill"></i
               ></a>
+            </div>
+            <div class="col text-center order-3">
+              <h4 class="text-light">Hubungi Kami</h4>
+              <img
+                src="images/QRCode.png"
+                style="height: 50%"
+                alt="QR-General-NETFIN-ccexpress"
+              />
             </div>
             <div class="col-md-2 col-sm-4 ms-auto pb-1 mb-4">
               <div class="widget widget-light">
@@ -1194,6 +1184,12 @@
       </footer>
       <!-- Footer Akhir -->
     </main>
+    <script>
+      const trigger = document.querySelector("menu > .trigger");
+      trigger.addEventListener("click", (e) => {
+        e.currentTarget.parentElement.classList.toggle("open");
+      });
+    </script>
 
     <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/simplebar/dist/simplebar.min.js"></script>
