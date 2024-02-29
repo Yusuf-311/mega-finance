@@ -161,10 +161,11 @@
               Kredit Multiguna berjaminan BPKB Mobil anda. Gunakan Fasilitas
               terbatas kami dengan Mega PRIORITAS dengan CICILAN BENERAN Ringan.
             </p>
-            <button type="button" class="btn btn-warning btn">
-              Ajukan Simulasi<i class="bi bi-arrow-right-circle ms-2"></i>
-            </button>
-
+            <a href="https://wa.me/6282116109549">
+              <button type="button" class="btn btn-warning btn">
+                Ajukan Simulasi<i class="bi bi-arrow-right-circle ms-2"></i>
+              </button>
+            </a>
             <p class="text-mega mt-2">
               Tanya aja dulu, Yuk Kita berhitung secara CERMAT
             </p>
@@ -180,7 +181,9 @@
       </section>
 
       <menu class="zindex-5">
-        <a href="#" class="action"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://wa.me/6282116109549" class="action"
+          ><i class="bi bi-whatsapp"></i
+        ></a>
         <a href="#" class="action"><i class="bi bi-instagram"></i></a>
         <a href="#" class="action"><i class="bi bi-twitter"></i></a>
         <a href="#" class="action"><i class="bi bi-facebook"></i></a>
@@ -199,7 +202,7 @@
           <div class="col">
             <a
               class="card border-0 h-100 p-4 text-decoration-none rounded-5"
-              href="https://wa.me/6281558444484"
+              href="https://wa.me/6282116109549"
             >
               <div class="card-body pb-0">
                 <img
@@ -228,7 +231,7 @@
           <div class="col">
             <a
               class="card border-0 h-100 text-decoration-none p-4 rounded-5"
-              href="https://wa.me/6281558444484"
+              href="https://wa.me/6282116109549"
             >
               <div class="card-body pb-0">
                 <img
@@ -257,7 +260,7 @@
           <div class="col">
             <a
               class="card border-0 p-3 h-100 text-decoration-none rounded-5"
-              href="https://wa.me/6281558444484"
+              href="https://wa.me/6282116109549"
             >
               <div class="card-body pb-0">
                 <img
@@ -426,12 +429,112 @@
               class="mx-auto me-md-5 me-xl-7 ps-3 py-md-3 order-md-1"
               style="max-width: 516px"
             >
-              <form
-                class="needs-validation"
-                novalidate=""
-                action="/ajukan"
-                method="post"
-              >
+              <form class="needs-validation" id="contactForm">
+                <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
+                <p
+                  class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
+                >
+                  Ajukan Pinjaman dengan BPKB MOTOR, BPKB Mobil, atau BPKB
+                  Truck.
+                </p>
+                <b>Informasi Diri</b>
+                <div class="input-group mb-3 mt-2">
+                  <i
+                    class="fas fa-user position-absolute top-50 start-0 translate-middle-y ms-3"
+                  ></i>
+                  <input
+                    class="form-control rounded"
+                    type="text"
+                    name="nama"
+                    placeholder="Nama"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <i
+                    class="fas fa-mobile-alt position-absolute top-50 start-0 translate-middle-y ms-3"
+                  ></i>
+                  <input
+                    class="form-control rounded"
+                    type="text"
+                    name="hp"
+                    placeholder="Nomor Handphone"
+                    required
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <i
+                    class="fas fa-building position-absolute top-50 start-0 translate-middle-y ms-3"
+                  ></i>
+                  <input
+                    class="form-control rounded"
+                    type="text"
+                    name="kota"
+                    placeholder="Kota"
+                    required
+                  />
+                </div>
+                <b>Divisi</b>
+                <div class="form-check mt-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="ex-radio-1"
+                    name="divisi"
+                    value="Customer Service"
+                    checked
+                  />
+                  <label class="form-check-label" for="ex-radio-1"
+                    >Customer Service</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="ex-radio-2"
+                    name="divisi"
+                    value="Marketing BPKB Mobil"
+                  />
+                  <label class="form-check-label" for="ex-radio-2"
+                    >Marketing BPKB Mobil</label
+                  >
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    id="ex-radio-3"
+                    name="divisi"
+                    value="Marketing BPKB Motor"
+                  />
+                  <label class="form-check-label" for="ex-radio-3"
+                    >Marketing BPKB Motor</label
+                  >
+                </div>
+                <b>Keterangan Tambahan</b>
+                <div class="mb-3 mt-3 pb-1">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    name="keterangan"
+                    placeholder="Ex. Avanza, Xenia, tahun kendaraan dsb"
+                    required
+                  ></textarea>
+                </div>
+                <div class="row pt-2">
+                  <div class="col-lg-6 col-md-8">
+                    <button
+                      class="btn btn-primary btn-block"
+                      type="button"
+                      onclick="sendEmail()"
+                    >
+                      Hubungi Kami
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- <form class="needs-validation">
                 <h2 class="pb-4">Dapatkan Pinjaman Dana Kamu Disini</h2>
                 <p
                   class="callout d-block d-md-none d-lg-block fs-lg text-muted mb-grid-gutter"
@@ -527,12 +630,14 @@
                 </div>
                 <div class="row pt-2">
                   <div class="col-lg-6 col-md-8">
-                    <button class="btn btn-primary btn-block" type="submit">
-                      Hubungi Kami
-                    </button>
+                    <a href="mailto:mohyusuf03112001@gmail.com?subject=Hello">
+                      <button class="btn btn-primary btn-block" type="submit">
+                        Hubungi Kami
+                      </button>
+                    </a>
                   </div>
                 </div>
-              </form>
+              </form> -->
             </div>
           </div>
           <div class="col-lg-6 col-md-6 pt-5 pb-3 py-md-5 text-center">
@@ -540,7 +645,7 @@
             <p class="text-center pb-4 mb-2 mb-lg-3">
               Kami Mega Finance *cbg 24 jam siap Melayani
             </p>
-            <a target="_blank" href="https://wa.me/6281558444484">
+            <a target="_blank" href="https://wa.me/6282116109549">
               <img
                 src="https://netfin.id/site-assets/netfin/button-wa.png"
                 class="rounded mx-auto"
@@ -620,20 +725,14 @@
                   <div
                     class="col-lg-4 d-flex align-items-center justify-content-end"
                   >
-                    <a class="btn btn-warning" href="#"
+                    <a
+                      class="btn btn-warning"
+                      href="https://wa.me/6282116109549"
                       >Ajukan Sekarang <i class="bi bi-chevron-right"></i
                     ></a>
                   </div>
                 </div>
               </section>
-              <!-- <div class="row bg-warning">
-                <div class="col">
-                  Ajukan pembiayaan pinjaman jaminan BPKB Mobil
-                </div>
-                <div class="col">
-                  <button></button>
-                </div>
-              </div> -->
             </div>
           </div>
 
@@ -699,7 +798,9 @@
                   <div
                     class="col-lg-4 d-flex align-items-center justify-content-end"
                   >
-                    <a class="btn btn-warning" href="#"
+                    <a
+                      class="btn btn-warning"
+                      href="https://wa.me/6282116109549"
                       >Ajukan Sekarang <i class="bi bi-chevron-right"></i
                     ></a>
                   </div>
@@ -752,7 +853,9 @@
                   <div
                     class="col-lg-4 d-flex align-items-center justify-content-end"
                   >
-                    <a class="btn btn-warning" href="#"
+                    <a
+                      class="btn btn-warning"
+                      href="https://wa.me/6282116109549"
                       >Ajukan Sekarang <i class="bi bi-chevron-right"></i
                     ></a>
                   </div>
@@ -803,7 +906,9 @@
                   <div
                     class="col-lg-4 d-flex align-items-center justify-content-end"
                   >
-                    <a class="btn btn-warning" href="#"
+                    <a
+                      class="btn btn-warning"
+                      href="https://wa.me/6282116109549"
                       >Ajukan Sekarang <i class="bi bi-chevron-right"></i
                     ></a>
                   </div>
@@ -859,7 +964,9 @@
                   <div
                     class="col-lg-4 d-flex align-items-center justify-content-end"
                   >
-                    <a class="btn btn-warning" href="#"
+                    <a
+                      class="btn btn-warning"
+                      href="https://wa.me/6282116109549"
                       >Ajukan Sekarang <i class="bi bi-chevron-right"></i
                     ></a>
                   </div>
@@ -959,7 +1066,7 @@
                   href="https://netfin.id/"
                   target="_blank"
                   rel="noopener"
-                  >Netfin</a
+                  >Developed</a
                 >
               </p>
             </div>
