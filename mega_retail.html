@@ -55,6 +55,35 @@
         height: 470px;
         width: auto;
       }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+      }
+      th {
+        background-color: #f99d1c;
+        color: white;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #ffeb99;
+        transition: 0.3s;
+      }
 
       @media only screen and (max-width: 768px) {
         .background {
@@ -148,9 +177,13 @@
           </nav>
         </div>
       </header>
+      <section class="container text-center py-5 justify-content-center">
+        <img class="text-center" src="images/Hero-mega-retail.webp" alt="" />
+      </section>
+
       <section class="container mt-3">
-        <div class="row align-items-center g-0">
-          <div class="col-md-6 border-top border-bottom">
+        <div class="row align-items-center py-4 g-0">
+          <div class="col-md-6">
             <div class="ms-sm-4 my-sm-0">
               <h2 class="mb-2">Mega Finance #BackToNormal</h2>
               <h2>Subsection</h2>
@@ -174,9 +207,12 @@
           </div>
           <div class="col p-2 rounded-3 text-center">
             <img
-              src="images/banner-mega.jpg"
+              fetchpriority="high"
               class="rounded-3 background"
-              alt=""
+              src="images/section2.jpg"
+              height="200"
+              alt="Banner Mega"
+              style="height: 350px"
             />
           </div>
         </div>
@@ -191,6 +227,488 @@
         <a href="#" class="action"><i class="bi bi-facebook"></i></a>
         <div class="trigger p-2"><img src="images/logo.png" alt="" /></div>
       </menu>
+
+      <section class="container-fluid bg-light p-lg-5 py-4">
+        <div class="container">
+          <div class="table-responsive" bis_skin_checked="1">
+            <h5 class="text-bfi">Tabel Cicilan BPKB Mobil</h5>
+
+            <table>
+              <thead class="table header">
+                <tr>
+                  <th>Cashback</th>
+                  <th>12 BULAN</th>
+                  <th>24 BULAN</th>
+                  <th>36 BULAN</th>
+                  <th>48 BULAN</th>
+                </tr>
+              </thead>
+              <tbody class="text-body">
+                <tr>
+                  <td>20,000,000</td>
+                  <td>2,159,000.00</td>
+                  <td>1,230,500.00</td>
+                  <td>984,500.00</td>
+                  <td>896,000.00</td>
+                </tr>
+                <tr>
+                  <td>25,000,000</td>
+                  <td>2,598,500.00</td>
+                  <td>1,465,500.00</td>
+                  <td>1,163,000.00</td>
+                  <td>1,048,500.00</td>
+                </tr>
+                <tr>
+                  <td>30,000,000</td>
+                  <td>3,099,000.00</td>
+                  <td>1,750,500.00</td>
+                  <td>1,389,500.00</td>
+                  <td>1,252,000.00</td>
+                </tr>
+                <tr>
+                  <td>35,000,000</td>
+                  <td>3,538,500.00</td>
+                  <td>1,985,500.00</td>
+                  <td>1,568,000.00</td>
+                  <td>1,404,500.00</td>
+                </tr>
+                <tr>
+                  <td>40,000,000</td>
+                  <td>4,039,500.00</td>
+                  <td>2,270,000.00</td>
+                  <td>1,795,000.00</td>
+                  <td>1,608,000.00</td>
+                </tr>
+                <tr>
+                  <td>45,000,000</td>
+                  <td>4,479,000.00</td>
+                  <td>2,505,000.00</td>
+                  <td>1,973,500.00</td>
+                  <td>1,760,500.00</td>
+                </tr>
+                <tr>
+                  <td>50,000,000</td>
+                  <td>4,980,000.00</td>
+                  <td>3,529,000.00</td>
+                  <td>2,200,000.00</td>
+                  <td>1,963,500.00</td>
+                </tr>
+                <tr>
+                  <td>60,000,000</td>
+                  <td>5,920,500.00</td>
+                  <td>3,309,000.00</td>
+                  <td>2,605,500.00</td>
+                  <td>2,319,500.00</td>
+                </tr>
+                <tr>
+                  <td>70,000,000</td>
+                  <td>6,860,500.00</td>
+                  <td>3,828,500.00</td>
+                  <td>3,010,500.00</td>
+                  <td>2,675,500.00</td>
+                </tr>
+                <tr>
+                  <td>80,000,000</td>
+                  <td>7,759,500.00</td>
+                  <td>4,306,000.00</td>
+                  <td>3,369,500.00</td>
+                  <td>2,955,000.00</td>
+                </tr>
+                <tr>
+                  <td>90,000,000</td>
+                  <td>8,692,500.00</td>
+                  <td>4,818,000.00</td>
+                  <td>3,766,500.00</td>
+                  <td>3,299,000.00</td>
+                </tr>
+                <tr>
+                  <td>100,000,000</td>
+                  <td>9,625,500.00</td>
+                  <td>5,330,000.00</td>
+                  <td>4,163,500.00</td>
+                  <td>3,643,000.00</td>
+                </tr>
+                <tr>
+                  <td>150,000,000</td>
+                  <td>14,432,000.00</td>
+                  <td>8,023,500.00</td>
+                  <td>6,294,000.00</td>
+                  <td>5,569,000.00</td>
+                </tr>
+                <tr>
+                  <td>200,000,000</td>
+                  <td>19,157,000.00</td>
+                  <td>10,634,000.00</td>
+                  <td>8,330,000.00</td>
+                  <td>7,357,500.00</td>
+                </tr>
+                <tr>
+                  <td>250,000,000</td>
+                  <td>24,097,000.00</td>
+                  <td>13,305,000.00</td>
+                  <td>10,367,000.00</td>
+                  <td>9,034,000.00</td>
+                </tr>
+                <tr>
+                  <td>300,000,000</td>
+                  <td>28,762,500.00</td>
+                  <td>15,865,000.00</td>
+                  <td>12,352,500.00</td>
+                  <td>10,754,000.00</td>
+                </tr>
+                <tr>
+                  <td>350,000,000</td>
+                  <td>33,428,000.00</td>
+                  <td>18,425,500.00</td>
+                  <td>14,337,500.00</td>
+                  <td>12,474,000.00</td>
+                </tr>
+                <tr>
+                  <td>400,000,000</td>
+                  <td>38,236,500.00</td>
+                  <td>21,268,000.00</td>
+                  <td>16,797,000.00</td>
+                  <td>14,821,500.00</td>
+                </tr>
+                <tr>
+                  <td>450,000,000</td>
+                  <td>43,191,500.00</td>
+                  <td>24,179,500.00</td>
+                  <td>19,046,000.00</td>
+                  <td>16,775,500.00</td>
+                </tr>
+                <tr>
+                  <td>500,000,000</td>
+                  <td>47,857,000.00</td>
+                  <td>26,739,500.00</td>
+                  <td>21,031,500.00</td>
+                  <td>18,495,500.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row">
+            <div class="col-6 table-responsive" bis_skin_checked="1">
+              <h5 class="text-bfi">Cashback BPKB Mobil</h5>
+              <table border="1">
+                <thead class="table header">
+                  <tr class="fs-sm">
+                    <th>PLAFOND</th>
+                    <th>12 BULAN</th>
+                    <th>24 BULAN</th>
+                    <th>36 BULAN</th>
+                    <th>48 BULAN</th>
+                  </tr>
+                </thead>
+                <tbody class="fw-bold text-success">
+                  <tr>
+                    <td>20,000,000</td>
+                    <td>400,000.00</td>
+                    <td>700,000.00</td>
+                    <td>800,000.00</td>
+                    <td>1,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>25,000,000</td>
+                    <td>500,000.00</td>
+                    <td>875,000.00</td>
+                    <td>1,000,000.00</td>
+                    <td>1,250,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>30,000,000</td>
+                    <td>600,000.00</td>
+                    <td>1,050,000.00</td>
+                    <td>1,200,000.00</td>
+                    <td>1,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>35,000,000</td>
+                    <td>700,000.00</td>
+                    <td>1,225,000.00</td>
+                    <td>1,400,000.00</td>
+                    <td>1,750,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>40,000,000</td>
+                    <td>800,000.00</td>
+                    <td>1,400,000.00</td>
+                    <td>1,600,000.00</td>
+                    <td>2,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>45,000,000</td>
+                    <td>900,000.00</td>
+                    <td>1,575,000.00</td>
+                    <td>1,800,000.00</td>
+                    <td>2,250,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>50,000,000</td>
+                    <td>1,000,000.00</td>
+                    <td>1,750,000.00</td>
+                    <td>2,000,000.00</td>
+                    <td>2,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>60,000,000</td>
+                    <td>1,200,000.00</td>
+                    <td>2,100,000.00</td>
+                    <td>2,400,000.00</td>
+                    <td>3,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>70,000,000</td>
+                    <td>1,400,000.00</td>
+                    <td>2,450,000.00</td>
+                    <td>2,800,000.00</td>
+                    <td>3,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>80,000,000</td>
+                    <td>1,600,000.00</td>
+                    <td>2,800,000.00</td>
+                    <td>3,200,000.00</td>
+                    <td>4,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>90,000,000</td>
+                    <td>1,800,000.00</td>
+                    <td>3,150,000.00</td>
+                    <td>3,600,000.00</td>
+                    <td>4,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>100,000,000</td>
+                    <td>2,000,000.00</td>
+                    <td>3,500,000.00</td>
+                    <td>4,000,000.00</td>
+                    <td>5,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>150,000,000</td>
+                    <td>3,000,000.00</td>
+                    <td>5,250,000.00</td>
+                    <td>6,000,000.00</td>
+                    <td>7,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>200,000,000</td>
+                    <td>4,000,000.00</td>
+                    <td>7,000,000.00</td>
+                    <td>8,000,000.00</td>
+                    <td>10,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>250,000,000</td>
+                    <td>5,000,000.00</td>
+                    <td>8,750,000.00</td>
+                    <td>10,000,000.00</td>
+                    <td>12,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>300,000,000</td>
+                    <td>6,000,000.00</td>
+                    <td>10,500,000.00</td>
+                    <td>12,000,000.00</td>
+                    <td>15,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>350,000,000</td>
+                    <td>7,000,000.00</td>
+                    <td>12,250,000.00</td>
+                    <td>14,000,000.00</td>
+                    <td>17,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>400,000,000</td>
+                    <td>8,000,000.00</td>
+                    <td>14,000,000.00</td>
+                    <td>16,000,000.00</td>
+                    <td>20,000,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>450,000,000</td>
+                    <td>9,000,000.00</td>
+                    <td>15,750,000.00</td>
+                    <td>18,000,000.00</td>
+                    <td>22,500,000.00</td>
+                  </tr>
+                  <tr>
+                    <td>500,000,000</td>
+                    <td>10,000,000.00</td>
+                    <td>17,500,000.00</td>
+                    <td>20,000,000.00</td>
+                    <td>25,000,000.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-dark">
+                *cashback berupa uang tunai h +1 setelah pencairan
+              </p>
+            </div>
+            <div class="col-6 table-responsive" bis_skin_checked="1">
+              <h5 class="text-bfi">
+                Simulasi Cicilan BPKB Mobil Pertama setelah di Potong Cashback
+              </h5>
+              <table border="1">
+                <thead class="table header">
+                  <tr class="fs-sm">
+                    <th>PLAFOND</th>
+                    <th>12 BULAN</th>
+                    <th>24 BULAN</th>
+                    <th>36 BULAN</th>
+                    <th>48 BULAN</th>
+                  </tr>
+                </thead>
+                <tbody class="text-danger">
+                  <tr>
+                    <td>20,000,000</td>
+                    <td>1,759,000.00</td>
+                    <td>530,500.00</td>
+                    <td>184,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>25,000,000</td>
+                    <td>2,098,500.00</td>
+                    <td>590,500.00</td>
+                    <td>163,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>30,000,000</td>
+                    <td>2,499,000.00</td>
+                    <td>700,500.00</td>
+                    <td>189,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>35,000,000</td>
+                    <td>2,838,500.00</td>
+                    <td>760,500.00</td>
+                    <td>168,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>40,000,000</td>
+                    <td>3,239,500.00</td>
+                    <td>870,000.00</td>
+                    <td>195,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>45,000,000</td>
+                    <td>3,579,000.00</td>
+                    <td>930,000.00</td>
+                    <td>173,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>50,000,000</td>
+                    <td>3,980,000.00</td>
+                    <td>1,779,000.00</td>
+                    <td>200,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>60,000,000</td>
+                    <td>4,720,500.00</td>
+                    <td>1,209,000.00</td>
+                    <td>205,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>70,000,000</td>
+                    <td>5,460,500.00</td>
+                    <td>1,378,500.00</td>
+                    <td>210,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>80,000,000</td>
+                    <td>6,159,500.00</td>
+                    <td>1,506,000.00</td>
+                    <td>169,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>90,000,000</td>
+                    <td>6,892,500.00</td>
+                    <td>1,668,000.00</td>
+                    <td>166,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>100,000,000</td>
+                    <td>7,625,500.00</td>
+                    <td>1,830,000.00</td>
+                    <td>163,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>150,000,000</td>
+                    <td>11,432,000.00</td>
+                    <td>2,773,500.00</td>
+                    <td>294,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>200,000,000</td>
+                    <td>15,157,000.00</td>
+                    <td>3,634,000.00</td>
+                    <td>330,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>250,000,000</td>
+                    <td>19,097,000.00</td>
+                    <td>4,555,000.00</td>
+                    <td>367,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>300,000,000</td>
+                    <td>22,762,500.00</td>
+                    <td>5,365,000.00</td>
+                    <td>352,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>350,000,000</td>
+                    <td>26,428,000.00</td>
+                    <td>6,175,500.00</td>
+                    <td>337,500.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>400,000,000</td>
+                    <td>30,236,500.00</td>
+                    <td>7,268,000.00</td>
+                    <td>797,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>450,000,000</td>
+                    <td>34,191,500.00</td>
+                    <td>8,429,500.00</td>
+                    <td>1,046,000.00</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>500,000,000</td>
+                    <td>37,857,000.00</td>
+                    <td>9,239,500.00</td>
+                    <td>1,031,500.00</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Service Awal -->
       <section class="container py-5">
